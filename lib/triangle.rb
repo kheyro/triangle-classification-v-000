@@ -9,7 +9,6 @@ class Triangle
 
   def kind
     all = [@one,@two,@three].sort
-
     if (all[0] + all[1]) <= all[2]
       raise TriangleError
     else
@@ -21,12 +20,10 @@ class Triangle
         return :scalene
       end
     end
-
   end
-
+  
 end
 
 
 class TriangleError < StandardError
-
 end
